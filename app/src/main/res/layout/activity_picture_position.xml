@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".picture_position">
+    
+    <ImageView
+        android:id="@+id/d1"
+        android:src="@drawable/dog1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@color/green"/>
+    <ImageView
+        android:src="@drawable/dog2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/d1"
+        android:layout_toRightOf="@id/d1"
+        android:background="@color/red"/>
+    <ImageView
+        android:src="@drawable/dog3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/d1"
+        android:layout_toLeftOf="@id/d1"
+        android:background="@color/blue"/>
+    <ImageView
+        android:id="@+id/d2"
+        android:src="@drawable/dog4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/d1"
+        android:layout_toLeftOf="@id/d1"
+        android:background="@color/colorPrimary"/>
+    <ImageView
+        android:id="@+id/d4"
+        android:src="@drawable/dog5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/d1"
+        android:layout_toRightOf="@id/d1"
+        android:background="@color/colorAccent"/>
+    <ImageView
+        android:id="@+id/d3"
+        android:src="@drawable/cat1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/d2"
+        android:layout_toLeftOf="@id/d2"
+        android:background="@color/colorPrimaryDark"/>
+    <ImageView
+        android:src="@drawable/cat2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/d3"
+        android:layout_alignRight="@+id/d4"
+        android:background="#ff1ff5"/>
+
+    
+
+</RelativeLayout>
